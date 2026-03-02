@@ -1,0 +1,196 @@
+Topic,Category,Summary,Reference URL,Difficulty
+Normalization,DBMS,Overview of Normalization in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+ACID Properties,DBMS,Overview of ACID Properties in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+ER Model,DBMS,Overview of ER Model in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Relational Algebra,DBMS,Overview of Relational Algebra in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+SQL Joins,DBMS,Overview of SQL Joins in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Indexes in DBMS,DBMS,Overview of Indexes in DBMS in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Deadlock Handling,DBMS,Overview of Deadlock Handling in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Backup & Recovery,DBMS,Overview of Backup & Recovery in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Triggers,DBMS,Overview of Triggers in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Views,DBMS,Overview of Views in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Distributed Databases,DBMS,Overview of Distributed Databases in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+NoSQL Databases,DBMS,Overview of NoSQL Databases in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+CAP Theorem,DBMS,Overview of CAP Theorem in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Transactions,DBMS,Overview of Transactions in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Query Processing,DBMS,Overview of Query Processing in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Functional Dependencies,DBMS,Overview of Functional Dependencies in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+BCNF,DBMS,Overview of BCNF in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Data Warehousing,DBMS,Overview of Data Warehousing in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Data Mining Basics,DBMS,Overview of Data Mining Basics in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+OLAP Operations,DBMS,Overview of OLAP Operations in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Database Security,DBMS,Overview of Database Security in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Hashing,DBMS,Overview of Hashing in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+File Organization,DBMS,Overview of File Organization in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Database Tuning,DBMS,Overview of Database Tuning in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Concurrency Control,DBMS,Overview of Concurrency Control in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Two-Phase Locking,DBMS,Overview of Two-Phase Locking in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Database Replication,DBMS,Overview of Database Replication in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Sharding,DBMS,Overview of Sharding in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Stored Procedures,DBMS,Overview of Stored Procedures in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Cursor Management,DBMS,Overview of Cursor Management in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Schema Design,DBMS,Overview of Schema Design in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Database Normal Forms,DBMS,Overview of Database Normal Forms in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Data Independence,DBMS,Overview of Data Independence in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Record Storage,DBMS,Overview of Record Storage in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+Database Logs,DBMS,Overview of Database Logs in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Query Execution Plans,DBMS,Overview of Query Execution Plans in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Materialized Views,DBMS,Overview of Materialized Views in DBMS,https://www.geeksforgeeks.org/dbms/,Beginner
+RDBMS Architecture,DBMS,Overview of RDBMS Architecture in DBMS,https://www.geeksforgeeks.org/dbms/,Intermediate
+Database Connectivity (JDBC),DBMS,Overview of Database Connectivity (JDBC) in DBMS,https://www.geeksforgeeks.org/dbms/,Advanced
+Introduction to AI,AI,Overview of Introduction to AI in AI,https://www.tensorflow.org/,Beginner
+Machine Learning Types,AI,Overview of Machine Learning Types in AI,https://www.tensorflow.org/,Intermediate
+Supervised Learning,AI,Overview of Supervised Learning in AI,https://www.tensorflow.org/,Advanced
+Unsupervised Learning,AI,Overview of Unsupervised Learning in AI,https://www.tensorflow.org/,Beginner
+Reinforcement Learning,AI,Overview of Reinforcement Learning in AI,https://www.tensorflow.org/,Intermediate
+Neural Networks,AI,Overview of Neural Networks in AI,https://www.tensorflow.org/,Advanced
+Deep Learning,AI,Overview of Deep Learning in AI,https://www.tensorflow.org/,Beginner
+CNNs,AI,Overview of CNNs in AI,https://www.tensorflow.org/,Intermediate
+RNNs,AI,Overview of RNNs in AI,https://www.tensorflow.org/,Advanced
+Transformers,AI,Overview of Transformers in AI,https://www.tensorflow.org/,Beginner
+Natural Language Processing,AI,Overview of Natural Language Processing in AI,https://www.tensorflow.org/,Intermediate
+Sentiment Analysis,AI,Overview of Sentiment Analysis in AI,https://www.tensorflow.org/,Advanced
+Speech Recognition,AI,Overview of Speech Recognition in AI,https://www.tensorflow.org/,Beginner
+Computer Vision,AI,Overview of Computer Vision in AI,https://www.tensorflow.org/,Intermediate
+Generative Models,AI,Overview of Generative Models in AI,https://www.tensorflow.org/,Advanced
+GANs,AI,Overview of GANs in AI,https://www.tensorflow.org/,Beginner
+Predictive Analytics,AI,Overview of Predictive Analytics in AI,https://www.tensorflow.org/,Intermediate
+Expert Systems,AI,Overview of Expert Systems in AI,https://www.tensorflow.org/,Advanced
+Knowledge Representation,AI,Overview of Knowledge Representation in AI,https://www.tensorflow.org/,Beginner
+Fuzzy Logic,AI,Overview of Fuzzy Logic in AI,https://www.tensorflow.org/,Intermediate
+Robotics in AI,AI,Overview of Robotics in AI in AI,https://www.tensorflow.org/,Advanced
+Search Algorithms,AI,Overview of Search Algorithms in AI,https://www.tensorflow.org/,Beginner
+A* Algorithm,AI,Overview of A* Algorithm in AI,https://www.tensorflow.org/,Intermediate
+Bayesian Networks,AI,Overview of Bayesian Networks in AI,https://www.tensorflow.org/,Advanced
+Markov Models,AI,Overview of Markov Models in AI,https://www.tensorflow.org/,Beginner
+Evolutionary Algorithms,AI,Overview of Evolutionary Algorithms in AI,https://www.tensorflow.org/,Intermediate
+Swarm Intelligence,AI,Overview of Swarm Intelligence in AI,https://www.tensorflow.org/,Advanced
+AI Ethics,AI,Overview of AI Ethics in AI,https://www.tensorflow.org/,Beginner
+AI Bias,AI,Overview of AI Bias in AI,https://www.tensorflow.org/,Intermediate
+Prompt Engineering,AI,Overview of Prompt Engineering in AI,https://www.tensorflow.org/,Advanced
+Recommendation Systems,AI,Overview of Recommendation Systems in AI,https://www.tensorflow.org/,Beginner
+Clustering Algorithms,AI,Overview of Clustering Algorithms in AI,https://www.tensorflow.org/,Intermediate
+SVM,AI,Overview of SVM in AI,https://www.tensorflow.org/,Advanced
+Decision Trees,AI,Overview of Decision Trees in AI,https://www.tensorflow.org/,Beginner
+Random Forest,AI,Overview of Random Forest in AI,https://www.tensorflow.org/,Intermediate
+Gradient Boosting,AI,Overview of Gradient Boosting in AI,https://www.tensorflow.org/,Advanced
+Large Language Models,AI,Overview of Large Language Models in AI,https://www.tensorflow.org/,Beginner
+Reinforcement Agents,AI,Overview of Reinforcement Agents in AI,https://www.tensorflow.org/,Intermediate
+AI Applications,AI,Overview of AI Applications in AI,https://www.tensorflow.org/,Advanced
+HTML Basics,Web Development,Overview of HTML Basics in Web Development,https://developer.mozilla.org/,Beginner
+CSS Grid,Web Development,Overview of CSS Grid in Web Development,https://developer.mozilla.org/,Intermediate
+Flexbox,Web Development,Overview of Flexbox in Web Development,https://developer.mozilla.org/,Advanced
+JavaScript ES6,Web Development,Overview of JavaScript ES6 in Web Development,https://developer.mozilla.org/,Beginner
+DOM Manipulation,Web Development,Overview of DOM Manipulation in Web Development,https://developer.mozilla.org/,Intermediate
+ReactJS Basics,Web Development,Overview of ReactJS Basics in Web Development,https://developer.mozilla.org/,Advanced
+VueJS,Web Development,Overview of VueJS in Web Development,https://developer.mozilla.org/,Beginner
+Angular,Web Development,Overview of Angular in Web Development,https://developer.mozilla.org/,Intermediate
+NodeJS,Web Development,Overview of NodeJS in Web Development,https://developer.mozilla.org/,Advanced
+ExpressJS,Web Development,Overview of ExpressJS in Web Development,https://developer.mozilla.org/,Beginner
+REST API,Web Development,Overview of REST API in Web Development,https://developer.mozilla.org/,Intermediate
+GraphQL,Web Development,Overview of GraphQL in Web Development,https://developer.mozilla.org/,Advanced
+MongoDB,Web Development,Overview of MongoDB in Web Development,https://developer.mozilla.org/,Beginner
+MySQL,Web Development,Overview of MySQL in Web Development,https://developer.mozilla.org/,Intermediate
+Responsive Design,Web Development,Overview of Responsive Design in Web Development,https://developer.mozilla.org/,Advanced
+Bootstrap,Web Development,Overview of Bootstrap in Web Development,https://developer.mozilla.org/,Beginner
+Tailwind CSS,Web Development,Overview of Tailwind CSS in Web Development,https://developer.mozilla.org/,Intermediate
+NextJS,Web Development,Overview of NextJS in Web Development,https://developer.mozilla.org/,Advanced
+Svelte,Web Development,Overview of Svelte in Web Development,https://developer.mozilla.org/,Beginner
+Django,Web Development,Overview of Django in Web Development,https://developer.mozilla.org/,Intermediate
+Flask,Web Development,Overview of Flask in Web Development,https://developer.mozilla.org/,Advanced
+PHP Basics,Web Development,Overview of PHP Basics in Web Development,https://developer.mozilla.org/,Beginner
+Laravel,Web Development,Overview of Laravel in Web Development,https://developer.mozilla.org/,Intermediate
+WebSockets,Web Development,Overview of WebSockets in Web Development,https://developer.mozilla.org/,Advanced
+JWT Authentication,Web Development,Overview of JWT Authentication in Web Development,https://developer.mozilla.org/,Beginner
+OAuth2,Web Development,Overview of OAuth2 in Web Development,https://developer.mozilla.org/,Intermediate
+Frontend Optimization,Web Development,Overview of Frontend Optimization in Web Development,https://developer.mozilla.org/,Advanced
+Backend Architecture,Web Development,Overview of Backend Architecture in Web Development,https://developer.mozilla.org/,Beginner
+Microservices,Web Development,Overview of Microservices in Web Development,https://developer.mozilla.org/,Intermediate
+API Rate Limiting,Web Development,Overview of API Rate Limiting in Web Development,https://developer.mozilla.org/,Advanced
+Web Security,Web Development,Overview of Web Security in Web Development,https://developer.mozilla.org/,Beginner
+CORS,Web Development,Overview of CORS in Web Development,https://developer.mozilla.org/,Intermediate
+Session Management,Web Development,Overview of Session Management in Web Development,https://developer.mozilla.org/,Advanced
+Cookies,Web Development,Overview of Cookies in Web Development,https://developer.mozilla.org/,Beginner
+PWA,Web Development,Overview of PWA in Web Development,https://developer.mozilla.org/,Intermediate
+Service Workers,Web Development,Overview of Service Workers in Web Development,https://developer.mozilla.org/,Advanced
+Cloud Deployment,Web Development,Overview of Cloud Deployment in Web Development,https://developer.mozilla.org/,Beginner
+CI/CD,Web Development,Overview of CI/CD in Web Development,https://developer.mozilla.org/,Intermediate
+Version Control (Git),Web Development,Overview of Version Control (Git) in Web Development,https://developer.mozilla.org/,Advanced
+Introduction to OS,Operating Systems,Overview of Introduction to OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Types of OS,Operating Systems,Overview of Types of OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Process Management,Operating Systems,Overview of Process Management in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Threading Models,Operating Systems,Overview of Threading Models in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+CPU Scheduling,Operating Systems,Overview of CPU Scheduling in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+FCFS,Operating Systems,Overview of FCFS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Round Robin,Operating Systems,Overview of Round Robin in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Priority Scheduling,Operating Systems,Overview of Priority Scheduling in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Memory Allocation,Operating Systems,Overview of Memory Allocation in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Paging,Operating Systems,Overview of Paging in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Segmentation,Operating Systems,Overview of Segmentation in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Virtual Memory,Operating Systems,Overview of Virtual Memory in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Deadlocks,Operating Systems,Overview of Deadlocks in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Disk Scheduling,Operating Systems,Overview of Disk Scheduling in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+File System Architecture,Operating Systems,Overview of File System Architecture in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Inodes,Operating Systems,Overview of Inodes in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Device Drivers,Operating Systems,Overview of Device Drivers in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Kernel Architecture,Operating Systems,Overview of Kernel Architecture in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+System Calls,Operating Systems,Overview of System Calls in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Interrupt Handling,Operating Systems,Overview of Interrupt Handling in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Booting Process,Operating Systems,Overview of Booting Process in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Distributed OS,Operating Systems,Overview of Distributed OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Real-Time OS,Operating Systems,Overview of Real-Time OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Synchronization,Operating Systems,Overview of Synchronization in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Semaphores,Operating Systems,Overview of Semaphores in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Monitors,Operating Systems,Overview of Monitors in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Banker's Algorithm,Operating Systems,Overview of Banker's Algorithm in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Paging vs Segmentation,Operating Systems,Overview of Paging vs Segmentation in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Cache Memory,Operating Systems,Overview of Cache Memory in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Firmware,Operating Systems,Overview of Firmware in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+DMA,Operating Systems,Overview of DMA in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+I/O Management,Operating Systems,Overview of I/O Management in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Security in OS,Operating Systems,Overview of Security in OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Virtualization,Operating Systems,Overview of Virtualization in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Containers,Operating Systems,Overview of Containers in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Linux Commands,Operating Systems,Overview of Linux Commands in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+Windows OS,Operating Systems,Overview of Windows OS in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Beginner
+Memory Fragmentation,Operating Systems,Overview of Memory Fragmentation in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Intermediate
+Process States,Operating Systems,Overview of Process States in Operating Systems,https://www.geeksforgeeks.org/operating-systems/,Advanced
+OSI Model,Networking,Overview of OSI Model in Networking,https://www.cisco.com/,Beginner
+TCP/IP,Networking,Overview of TCP/IP in Networking,https://www.cisco.com/,Intermediate
+Routing Basics,Networking,Overview of Routing Basics in Networking,https://www.cisco.com/,Advanced
+Static Routing,Networking,Overview of Static Routing in Networking,https://www.cisco.com/,Beginner
+Dynamic Routing,Networking,Overview of Dynamic Routing in Networking,https://www.cisco.com/,Intermediate
+DNS,Networking,Overview of DNS in Networking,https://www.cisco.com/,Advanced
+DHCP,Networking,Overview of DHCP in Networking,https://www.cisco.com/,Beginner
+Subnetting,Networking,Overview of Subnetting in Networking,https://www.cisco.com/,Intermediate
+NAT,Networking,Overview of NAT in Networking,https://www.cisco.com/,Advanced
+ARP,Networking,Overview of ARP in Networking,https://www.cisco.com/,Beginner
+ICMP,Networking,Overview of ICMP in Networking,https://www.cisco.com/,Intermediate
+Firewalls,Networking,Overview of Firewalls in Networking,https://www.cisco.com/,Advanced
+Load Balancing,Networking,Overview of Load Balancing in Networking,https://www.cisco.com/,Beginner
+VPN,Networking,Overview of VPN in Networking,https://www.cisco.com/,Intermediate
+HTTP/HTTPS,Networking,Overview of HTTP/HTTPS in Networking,https://www.cisco.com/,Advanced
+FTP/SFTP,Networking,Overview of FTP/SFTP in Networking,https://www.cisco.com/,Beginner
+SMTP/POP3,Networking,Overview of SMTP/POP3 in Networking,https://www.cisco.com/,Intermediate
+Network Security,Networking,Overview of Network Security in Networking,https://www.cisco.com/,Advanced
+WiFi Protocols,Networking,Overview of WiFi Protocols in Networking,https://www.cisco.com/,Beginner
+LAN/WAN,Networking,Overview of LAN/WAN in Networking,https://www.cisco.com/,Intermediate
+Switching,Networking,Overview of Switching in Networking,https://www.cisco.com/,Advanced
+VLAN,Networking,Overview of VLAN in Networking,https://www.cisco.com/,Beginner
+Network Topologies,Networking,Overview of Network Topologies in Networking,https://www.cisco.com/,Intermediate
+5G Networks,Networking,Overview of 5G Networks in Networking,https://www.cisco.com/,Advanced
+Cloud Networking,Networking,Overview of Cloud Networking in Networking,https://www.cisco.com/,Beginner
+SDN,Networking,Overview of SDN in Networking,https://www.cisco.com/,Intermediate
+Edge Computing,Networking,Overview of Edge Computing in Networking,https://www.cisco.com/,Advanced
+Proxy Servers,Networking,Overview of Proxy Servers in Networking,https://www.cisco.com/,Beginner
+Packet Sniffing,Networking,Overview of Packet Sniffing in Networking,https://www.cisco.com/,Intermediate
+Encryption,Networking,Overview of Encryption in Networking,https://www.cisco.com/,Advanced
+TLS/SSL,Networking,Overview of TLS/SSL in Networking,https://www.cisco.com/,Beginner
+DoS/DDoS,Networking,Overview of DoS/DDoS in Networking,https://www.cisco.com/,Intermediate
+Intrusion Detection,Networking,Overview of Intrusion Detection in Networking,https://www.cisco.com/,Advanced
+QoS,Networking,Overview of QoS in Networking,https://www.cisco.com/,Beginner
+Bandwidth Management,Networking,Overview of Bandwidth Management in Networking,https://www.cisco.com/,Intermediate
+Bluetooth Protocol,Networking,Overview of Bluetooth Protocol in Networking,https://www.cisco.com/,Advanced
+NFC Communication,Networking,Overview of NFC Communication in Networking,https://www.cisco.com/,Beginner
+Cellular Networks,Networking,Overview of Cellular Networks in Networking,https://www.cisco.com/,Intermediate
+Wireless Standards,Networking,Overview of Wireless Standards in Networking,https://www.cisco.com/,Advanced

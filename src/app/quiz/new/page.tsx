@@ -66,23 +66,16 @@ export default function QuizPage() {
         }]);
     };
 
-    const nextQuestion = () => {
+    const nextQuestion = async () => {
         if (currentIndex < questions.length - 1) {
             setCurrentIndex(currentIndex + 1);
             setSelectedOption(null);
             setIsCorrect(null);
         } else {
-            setShowResult(true);
-        }
-    };
-
-    useEffect(() => {
-        if (showResult) {
-            const saveQuizResult = async () => {
-                try {
-                    const { data: { user } } = await supabase.auth.getUser();
-                    if (!user) return;
-
+            // Save result immediately when finishing the quiz
+            try {
+                const { data: { user } } = await supabase.auth.getUser();
+                if (user) {
                     await supabase.from('quizzes').insert({
                         user_id: user.id,
                         topic,
@@ -91,13 +84,13 @@ export default function QuizPage() {
                         total_questions: questions.length,
                         created_at: new Date().toISOString()
                     });
-                } catch (error) {
-                    console.error('Error saving result:', error);
                 }
-            };
-            saveQuizResult();
+            } catch (error) {
+                console.error('Error saving result:', error);
+            }
+            setShowResult(true);
         }
-    }, [showResult, topic, score, questions.length]);
+    };
 
     if (loading) {
         return (
@@ -139,7 +132,7 @@ export default function QuizPage() {
                     </div>
 
                     <button
-                        onClick={() => router.push('/dashboard')}
+                        onClick={() => { window.location.href = '/dashboard'; }}
                         className="w-full py-3 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700 transition"
                     >
                         Back to Dashboard

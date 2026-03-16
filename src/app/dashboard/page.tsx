@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar';
 
 export default function Dashboard() {
     const [stats, setStats] = useState({
-        streak: 1,
+        streak: 0,
         mastery: 0,
         quizzesTaken: 0,
         avgScore: 0
@@ -31,18 +31,63 @@ export default function Dashboard() {
                 const totalScore = quizzes.reduce((acc, q) => acc + (q.score / q.total_questions) * 100, 0);
                 const avgScore = Math.round(totalScore / totalQuizzes);
 
+                // Calculate streak
+                const uniqueDates = Array.from(new Set(quizzes.map(q => {
+                    const d = new Date(q.created_at);
+                    return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+                }))).sort((a, b) => b - a);
+
+                let currentStreak = 0;
+                if (uniqueDates.length > 0) {
+                    const today = new Date();
+                    const todayTime = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+                    const oneDay = 24 * 60 * 60 * 1000;
+                    
+                    let checkTime = todayTime;
+                    if (uniqueDates[0] === todayTime) {
+                        currentStreak = 1;
+                    } else if (uniqueDates[0] === todayTime - oneDay) {
+                        currentStreak = 1;
+                        checkTime = todayTime - oneDay;
+                    }
+
+                    if (currentStreak > 0) {
+                        for (let i = 1; i < uniqueDates.length; i++) {
+                            checkTime -= oneDay;
+                            if (uniqueDates[i] === checkTime) {
+                                currentStreak++;
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+                }
+
                 setStats({
-                    streak: 1,
+                    streak: currentStreak,
                     mastery: avgScore,
                     quizzesTaken: totalQuizzes,
                     avgScore: avgScore
                 });
 
                 // Prepare Chart Data
-                const chartData = quizzes.map(q => ({
-                    day: new Date(q.created_at).toLocaleDateString(undefined, { weekday: 'short' }),
-                    score: Math.round((q.score / q.total_questions) * 100)
+                // Group by day to show average score per day if multiple quizzes taken
+                const chartDataMap = new Map();
+                for (const q of quizzes) {
+                    const dateStr = new Date(q.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+                    const score = Math.round((q.score / q.total_questions) * 100);
+                    if (chartDataMap.has(dateStr)) {
+                        chartDataMap.get(dateStr).scores.push(score);
+                    } else {
+                        chartDataMap.set(dateStr, { day: dateStr, scores: [score] });
+                    }
+                }
+                
+                const chartData = Array.from(chartDataMap.values()).map(data => ({
+                    day: data.day,
+                    score: Math.round(data.scores.reduce((a: number, b: number) => a + b, 0) / data.scores.length)
                 }));
+
                 setProgressData(chartData);
             }
         };

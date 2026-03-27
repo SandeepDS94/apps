@@ -76,17 +76,62 @@ export default function QuizPage() {
             try {
                 const { data: { user } } = await supabase.auth.getUser();
                 if (user) {
-                    await supabase.from('quizzes').insert({
+                    const currentScorePct = Math.round((score / questions.length) * 100);
+
+                    // Insert quiz record
+                    const { data: quizData, error: quizError } = await supabase.from('quizzes').insert({
                         user_id: user.id,
                         topic,
                         difficulty,
                         score,
                         total_questions: questions.length,
                         created_at: new Date().toISOString()
-                    });
+                    }).select().single();
+
+                    if (quizError) throw quizError;
+
+                    // Update user_stats
+                    const { data: stats, error: statsError } = await supabase
+                        .from('user_stats')
+                        .select('*')
+                        .eq('user_id', user.id)
+                        .single();
+
+                    const today = new Date().toISOString().split('T')[0];
+                    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+                    if (stats) {
+                        let newStreak = stats.streak_days;
+                        if (stats.last_active_date === yesterday) {
+                            newStreak += 1;
+                        } else if (stats.last_active_date !== today) {
+                            newStreak = 1;
+                        }
+
+                        const newTotalQuizzes = (stats.total_quizzes || 0) + 1;
+                        const newAvgScore = Math.round(((Number(stats.average_score) || 0) * (stats.total_quizzes || 0) + currentScorePct) / newTotalQuizzes);
+
+                        await supabase.from('user_stats').update({
+                            total_quizzes: newTotalQuizzes,
+                            average_score: newAvgScore,
+                            streak_days: newStreak,
+                            last_active_date: today,
+                            updated_at: new Date().toISOString()
+                        }).eq('user_id', user.id);
+                    } else {
+                        // First time taking a quiz
+                        await supabase.from('user_stats').insert({
+                            user_id: user.id,
+                            total_quizzes: 1,
+                            average_score: currentScorePct,
+                            streak_days: 1,
+                            last_active_date: today,
+                            updated_at: new Date().toISOString()
+                        });
+                    }
                 }
             } catch (error) {
-                console.error('Error saving result:', error);
+                console.error('Error saving result or updating stats:', error);
             }
             setShowResult(true);
         }

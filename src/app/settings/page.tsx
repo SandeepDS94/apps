@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase';
 import { useRouter } from 'next/navigation';
-import { User, Settings as SettingsIcon, LogOut, Save, Loader2, ArrowLeft } from 'lucide-react';
+import { User, Settings as SettingsIcon, LogOut, Save, Loader2, ArrowLeft, Lock } from 'lucide-react';
 import Link from 'next/link';
 
 export default function SettingsPage() {
@@ -14,6 +14,10 @@ export default function SettingsPage() {
         full_name: '',
         grade_level: '',
         daily_goal: 2
+    });
+    const [passwordData, setPasswordData] = useState({
+        newPassword: '',
+        confirmPassword: ''
     });
     const router = useRouter();
 
@@ -64,6 +68,32 @@ export default function SettingsPage() {
         } catch (error) {
             console.error('Error updating profile:', error);
             alert('Failed to save settings.');
+        } finally {
+            setSaving(false);
+        }
+    };
+
+    const handleChangePassword = async (e: React.FormEvent) => {
+        e.preventDefault();
+        if (passwordData.newPassword !== passwordData.confirmPassword) {
+            alert('Passwords do not match');
+            return;
+        }
+        if (passwordData.newPassword.length < 6) {
+            alert('Password must be at least 6 characters');
+            return;
+        }
+
+        setSaving(true);
+        try {
+            const { error } = await supabase.auth.updateUser({
+                password: passwordData.newPassword
+            });
+            if (error) throw error;
+            alert('Password changed successfully!');
+            setPasswordData({ newPassword: '', confirmPassword: '' });
+        } catch (error: any) {
+            alert(error.message);
         } finally {
             setSaving(false);
         }
@@ -167,6 +197,53 @@ export default function SettingsPage() {
                                 Save Changes
                             </button>
                         </div>
+                    </div>
+
+                    {/* Change Password */}
+                    <div className="bg-slate-900/50 backdrop-blur-xl p-8 rounded-3xl border border-white/5 shadow-xl relative overflow-hidden">
+                        <div className="flex items-center gap-4 mb-8 border-b border-white/5 pb-4">
+                            <div className="p-3 bg-indigo-500/10 rounded-xl border border-indigo-500/20">
+                                <Lock className="text-indigo-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)]" size={24} />
+                            </div>
+                            <h2 className="text-xl font-bold text-white">Change Password</h2>
+                        </div>
+
+                        <form onSubmit={handleChangePassword} className="space-y-6">
+                            <div>
+                                <label className="block text-xs uppercase tracking-wider text-slate-500 font-bold mb-2 ml-1">New Password</label>
+                                <input
+                                    type="password"
+                                    value={passwordData.newPassword}
+                                    onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })}
+                                    placeholder="Enter new password"
+                                    className="w-full p-4 bg-slate-800/50 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/50 border border-white/5 text-white transition-all focus:bg-slate-800"
+                                    required
+                                    minLength={6}
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-xs uppercase tracking-wider text-slate-500 font-bold mb-2 ml-1">Confirm New Password</label>
+                                <input
+                                    type="password"
+                                    value={passwordData.confirmPassword}
+                                    onChange={(e) => setPasswordData({ ...passwordData, confirmPassword: e.target.value })}
+                                    placeholder="Confirm new password"
+                                    className="w-full p-4 bg-slate-800/50 rounded-xl outline-none focus:ring-2 focus:ring-blue-500/50 border border-white/5 text-white transition-all focus:bg-slate-800"
+                                    required
+                                    minLength={6}
+                                />
+                            </div>
+
+                            <button
+                                type="submit"
+                                disabled={saving}
+                                className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold shadow-lg shadow-indigo-500/20 transition-all hover:scale-[1.01] flex items-center justify-center gap-2 mt-4"
+                            >
+                                {saving ? <Loader2 className="animate-spin" size={20} /> : <Lock size={20} />}
+                                Update Password
+                            </button>
+                        </form>
                     </div>
 
                     {/* Account Settings */}
